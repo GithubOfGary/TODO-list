@@ -99,17 +99,6 @@ contextBridge.exposeInMainWorld('electronAPI', {
 });
 ```
 
-### 優雅的錯誤處理
-```javascript
-async loadTodos() {
-  try {
-    this.todos = await window.electronAPI.loadTodos();
-  } catch (error) {
-    console.error('Failed to load todos:', error);
-    this.todos = [];
-  }
-}
-```
 
 ## 數據存儲
 
@@ -158,6 +147,3 @@ todo-electron/
 - [ ] 通知提醒
 - [ ] 任務統計圖表
 
-## 許可證
-
-MIT License
