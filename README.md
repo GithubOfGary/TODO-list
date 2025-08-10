@@ -147,3 +147,6 @@ todo-electron/
 - [ ] 通知提醒
 - [ ] 任務統計圖表
 
+## 備註
+claude code 生成
+
