@@ -1,0 +1,38 @@
+{
+  "name": "todo-electron",
+  "version": "1.0.0",
+  "description": "A modern TODO list application built with Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "NODE_ENV=development electron .",
+    "build": "electron-builder",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "todo",
+    "electron",
+    "desktop",
+    "productivity"
+  ],
+  "author": "Gary",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^37.2.6"
+  },
+  "build": {
+    "appId": "com.gary.todo-electron",
+    "productName": "TODO List",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer.js",
+      "index.html",
+      "styles.css",
+      "assets/**/*"
+    ]
+  }
+}
